@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>Accueil - Mon Portfolio</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <script src="js/include.js" defer></script>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <div id="navbar"></div>
+  <div data-include="navbar.html"></div>
 
   <!-- CONTENU PRINCIPAL -->
   <main>
@@ -17,16 +19,9 @@
   </main>
 
   <!-- FOOTER -->
-  <div id="footer"></div>
+  <div data-include="footer.html"></div>
 
   <!-- SCRIPT D’INCLUSION -->
-  <script>
-    fetch('navbar.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
 
 </body>
 </html>
