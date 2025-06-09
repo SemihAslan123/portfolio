@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Accueil - Mon Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <div data-include="navbar.html"></div>
+  <div id="navbar"></div>
 
   <!-- CONTENU PRINCIPAL -->
   <main>
@@ -17,10 +17,16 @@
   </main>
 
   <!-- FOOTER -->
-  <div data-include="footer.html"></div>
+  <div id="footer"></div>
 
   <!-- SCRIPT D’INCLUSION -->
-  <script src="js/include.js"></script>
+  <script>
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
 
 </body>
 </html>
