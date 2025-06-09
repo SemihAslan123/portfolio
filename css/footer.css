@@ -1,0 +1,15 @@
+/* footer.css */
+footer {
+    background-color: #1e1e2f;   /* Fond sombre */
+    color: white;                /* Texte blanc */
+    text-align: center;          /* Texte centré horizontalement */
+    padding: 15px 0;             /* Espace haut et bas */
+    position: fixed;             /* Fixe en bas de la page */
+    left: 0;
+    bottom: 0;
+    width: 100%;                /* Prend toute la largeur */
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* Légère ombre pour relief */
+    z-index: 1000;              /* Au-dessus du contenu */
+}
+  
