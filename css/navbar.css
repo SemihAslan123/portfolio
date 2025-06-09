@@ -1,53 +1,77 @@
-/* navbar */
+/* navbar.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding-top: 80px;
+}
+
 nav {
-  background-color: #1e1e2f;
+  background-color: #000000;
   padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 nav h1 {
-  color: white;
+  color: #ffffff;
   font-size: 24px;
   margin: 0;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  padding: 0 40px 0 0;
 }
 
 .nav-links a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
   transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
-.nav-links a:hover {
-  background-color: #333;
-}
+/* Couleurs au survol */
+.nav-links a:hover { background-color: #dc2b1b; }
+.nav-links a:nth-child(2):hover { background-color: #16d465; }
+.nav-links a:nth-child(3):hover { background-color: #4ecdc4; }
+.nav-links a:nth-child(4):hover { background-color: #ece814; }
+.nav-links a:nth-child(5):hover { background-color: #a3bffa; }
+.nav-links a:nth-child(6):hover { background-color: #ff9f55; }
 
 .burger {
   display: none;
-  background: none;
-  border: none;
-  color: white;
   font-size: 28px;
+  color: white;
   cursor: pointer;
+  background-color: #000000;
+  border: 1px solid #000000;
+  padding: 6px 12px;
+  z-index: 1001;
+  min-width: 40px;
 }
 
 @media (max-width: 768px) {
@@ -57,19 +81,22 @@ nav h1 {
 
   .nav-links {
     display: none;
+    flex-direction: column;
     width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #000;
   }
 
-  .nav-links.show {
+  .nav-links.active {
     display: flex;
   }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
+  .nav-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav h1 {
+    margin-bottom: 0;
   }
 }

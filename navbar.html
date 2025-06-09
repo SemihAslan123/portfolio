@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="css/navbar.css">
-
 <nav>
   <div class="nav-container">
     <h1>Mon Portfolio</h1>
-    <button class="burger" onclick="toggleMenu()">☰</button>
+    
+    <div class="burger" id="burger">&#9776;</div>
+
     <div class="nav-links" id="navLinks">
       <a href="index.html">Accueil</a>
       <a href="formations.html">Formations</a>
@@ -15,8 +15,3 @@
   </div>
 </nav>
 
-<script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle('show');
-  }
-</script>
