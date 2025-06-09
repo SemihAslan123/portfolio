@@ -1,23 +1,22 @@
 <link rel="stylesheet" href="css/navbar.css">
 
 <nav>
-  <div class="nav-header">
+  <div class="nav-container">
     <h1>Mon Portfolio</h1>
     <button class="burger" onclick="toggleMenu()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formations</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </div>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="formations.html">Formations</a></li>
-    <li><a href="experiences.html">Expériences</a></li>
-    <li><a href="projets.html">Projets</a></li>
-    <li><a href="competences.html">Compétences</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
 </nav>
 
 <script>
   function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
+    document.getElementById("navLinks").classList.toggle('show');
   }
 </script>
