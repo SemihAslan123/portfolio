@@ -2,11 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Accueil - Mon Portfolio</title>
+  <title>Formations - Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/formations.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/include.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/formations.js" defer></script>
 </head>
 <body>
 
@@ -16,12 +19,45 @@
   <!-- CONTENU PRINCIPAL -->
   <main>
     <h1>Formations</h1>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-item" data-year="2023-2025">
+        <div class="timeline-content">
+          <h3>2023/2025 - Bachelor Universitaire de Technologie - BUT Informatique</h3>
+          <p>2ème année, Université de Franche-Comté, Belfort</p>
+          <button class="info-button">?</button>
+          <div class="timeline-info">
+            <p>Actuellement en deuxième année de Bachelor Universitaire de Technologie en Informatique, je suis le parcours A, axé sur le développement d'applications et de logiciels.</p>
+          </div>
+        </div>
+        <div class="timeline-point"></div>
+      </div>
+      <div class="timeline-item" data-year="2022">
+        <div class="timeline-content">
+          <h3>2022 - Certificat de participation: PYTHON / HTML - CSS</h3>
+          <p>Mavi Dershanem, Turquie</p>
+          <button class="info-button">?</button>
+          <div class="timeline-info">
+            <p>J'ai suivi des cours en visioconférence pendant une durée de 10 mois, axés sur le HTML/CSS, Python, Arduino et SQL. Ces cours m'ont permis d'acquérir une certification en HTML/CSS et en Python.</p>
+          </div>
+        </div>
+        <div class="timeline-point"></div>
+      </div>
+      <div class="timeline-item" data-year="2020-2023">
+        <div class="timeline-content">
+          <h3>2020/2023 - Baccalauréat général</h3>
+          <p>Lycée Armand Peugeot, Valentigney</p>
+          <button class="info-button">?</button>
+          <div class="timeline-info">
+            <p>Lors de mon parcours au lycée, j'ai choisi les spécialités Mathématiques, Numérique et Sciences Informatiques (NSI) ainsi que Sciences Économiques et Sociales (SES) en classe de première. En terminale, j'ai poursuivi avec les spécialités Mathématiques et NSI, et j'ai également opté pour l'option Mathématiques expertes.</p>
+          </div>
+        </div>
+        <div class="timeline-point"></div>
+      </div>
+    </div>
   </main>
 
   <!-- FOOTER -->
   <div data-include="footer.html"></div>
-
-  <!-- SCRIPT D’INCLUSION -->
-
 </body>
 </html>

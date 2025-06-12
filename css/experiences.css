@@ -1,8 +1,81 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
 }
-  
+
 main {
-    padding-top: 80px; 
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.filter-button {
+    background-color: rgba(217, 167, 183, 0.95);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.filter-button:hover, .filter-button.active {
+    background-color: rgba(217, 167, 183, 1);
+    transform: scale(1.05); 
+}
+
+.experience {
+    background-color: rgba(30, 42, 56, 0.8);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(217, 167, 183, 0.95);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+}
+
+.experience.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.experience h3 {
+    margin-top: 0;
+}
+
+.date, .company {
+    font-style: italic;
+    color: rgba(217, 167, 183, 0.95);
 }

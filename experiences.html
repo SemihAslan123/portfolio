@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Accueil - Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/experiences.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/include.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/experiences.js" defer></script>
 </head>
 <body>
 
@@ -15,13 +18,38 @@
 
   <!-- CONTENU PRINCIPAL -->
   <main>
-    <h1>Experiences</h1>
+    <h1>Expérience</h1>
+    <p>Voici un aperçu de mes expériences professionnelles et événementielles</p>
+
+    <div class="button-container">
+      <button class="filter-button" onclick="filterSelection('all')">Tous</button>
+      <button class="filter-button" onclick="filterSelection('professionnelle')">Professionnelle</button>
+      <button class="filter-button" onclick="filterSelection('evenementiel')">Événementiel</button>
+    </div>
+
+    <div class="experience professionnelle">
+      <h3>Job Étudiant</h3>
+      <p class="date">Novembre 2024 - Maintenant</p>
+      <p class="company">Lidl, Pont-de-Roide</p>
+      <p>Je m'occupe de la caisse, de la mise en rayon, de la tenue des rayons et de la boulangerie lorsque je travaille le matin.</p>
+    </div>
+
+    <div class="experience professionnelle">
+      <h3>Stage en Développement Web</h3>
+      <p class="date">Avril 2025 - Juin 2025</p>
+      <p class="company">Mediamag Distribution, Besançon</p>
+      <p>J'ai développé une interface permettant aux enseignes de gérer le contenu affiché sur leurs écrans en magasin. Cette interface utilise un tableau de programmation pour définir les plages horaires et les médias à afficher, offrant ainsi une gestion flexible et précise des contenus multimédias.</p>
+    </div>
+
+    <div class="experience evenementiel">
+      <h3>Hackathon 2024</h3>
+      <p class="date">2024</p>
+      <p class="company">IUT Nord Franche-Comté, Belfort</p>
+      <p>J'ai participé à un hackathon de 24 heures à Belfort.</p>
+    </div>
   </main>
 
   <!-- FOOTER -->
   <div data-include="footer.html"></div>
-
-  <!-- SCRIPT D’INCLUSION -->
-
 </body>
 </html>

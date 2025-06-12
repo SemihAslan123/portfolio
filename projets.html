@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Accueil - Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/projets.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/include.js" defer></script>
+  <script src="js/navbar.js" defer></script>
 </head>
 <body>
 
@@ -16,12 +18,52 @@
   <!-- CONTENU PRINCIPAL -->
   <main>
     <h1>Projets</h1>
+    <p>Découvrez une sélection de mes projets, allant du développement web à des jeux de plateau.</p>
+
+    <div class="projects-container">
+      <a href="https://github.com/Estebanbrrr/NFT_Universe" target="_blank" class="project-card">
+        <h3>NFT Universe</h3>
+        <p>Développement d'une boutique en ligne qui permet l'achat de NFT.</p>
+        <div class="tech-icons">
+          <img src="medias/htmlCssJs.png" alt="HTML_CSS_JS">
+          <img src="medias/bootstrapImage.png" alt="Bootstrap">
+          <!-- Ajoutez d'autres icônes de technologie ici -->
+        </div>
+      </a>
+      <a href="https://github.com/Natan90/sae126" target="_blank" class="project-card">
+        <h3>4Mation</h3>
+        <p>4Mation est un jeu de plateau développé en Java utilisant le paradigme MVC, offrant une expérience de jeu structurée et interactive.</p>
+        <div class="tech-icons">
+          <img src="medias/javaImage.png" alt="Java">
+        </div>
+      </a>
+      <a href="https://github.com/SemihAslan123/QuanticGP" target="_blank" class="project-card">
+        <h3>QuanticGP</h3>
+        <p>QuanticGP est une plateforme événementielle pour le Grand Prix de Monaco, permettant la réservation de billets pour les visiteurs et utilisateurs, de stands pour les prestataires. Elle offre également des outils de gestion des activités et des prestataires pour les organisateurs.</p>
+        <div class="tech-icons">
+          <img src="medias/htmlCssJs.png" alt="HTML_CSS_JS">
+          <img src="medias/nodeJsImage.png" alt="NodeJs">
+          <img src="medias/vueImage.png" alt="VueJs">
+          <img src="medias/postgresSQlImage.png" alt="PostgresSQL">
+        </div>
+      </a>
+      <a href="https://github.com/Estebanbrrr/quanticVision?tab=readme-ov-file" target="_blank" class="project-card">
+        <h3>Quantic Vision</h3>
+        <p>Développement d'un site internet pour présenter l'entreprise Quantic Vision.</p>
+        <div class="tech-icons">
+          <img src="medias/htmlCssJs.png" alt="HTML_CSS_JS">
+        </div>
+      </a>
+    </div>
+
+    <a href="https://github.com/SemihAslan123" target="_blank" class="github-link">
+      Voir plus de projets (GitHub)
+    </a>
+    <br>
   </main>
 
   <!-- FOOTER -->
   <div data-include="footer.html"></div>
-
-  <!-- SCRIPT D’INCLUSION -->
 
 </body>
 </html>

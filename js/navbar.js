@@ -19,7 +19,7 @@ function includeHTML() {
       })
       .then(html => {
         el.innerHTML = html;
-        activerMenuBurger(); // <-- ATTACHE LE CLICK ICI, APRÈS INJECTION HTML
+        activerMenuBurger(); 
       })
       .catch(err => console.warn('Erreur d’inclusion:', err));
   });

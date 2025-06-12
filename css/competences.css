@@ -1,8 +1,96 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
 }
-  
+
 main {
-    padding-top: 80px; 
+    padding: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+}
+
+.title-text {
+    flex: 1;
+    padding-left: 50px;
+    min-width: 300px; 
+}
+
+.title-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
+}
+
+.title-text h2 {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #d9a7b7;
+}
+
+.svg-decoration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.svg-decoration img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .title-text {
+        padding-left: 0;
+        margin-top: 20px; 
+    }
+}
+
+.competence-section {
+    margin-bottom: 1px;
+    box-shadow: 0 2px 4px rgba(217, 167, 183, 0.5);
+}
+
+.competence-header {
+    background-color: #121212;
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #d9a7b7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 10px;
+    display: none;
+    background-color: #121212;
+}
+
+.stage-competence {
+    border-left: 3px solid #d9a7b7;
+    padding-left: 10px;
+    margin-bottom: 20px;
 }

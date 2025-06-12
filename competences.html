@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Accueil - Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/competences.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/include.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/competences.js" defer></script>
 </head>
 <body>
 
@@ -15,13 +18,42 @@
 
   <!-- CONTENU PRINCIPAL -->
   <main>
-    <h1>Competences</h1>
+    <div class="title-container">
+      <div class="svg-decoration">
+        <img src="medias/competencesImage.svg" alt="Humain travaillant">
+      </div>
+      <div class="title-text">
+        <h1>Compétences</h1>
+        <h2>Développement et illustration des compétences clés à travers mon stage</h2>
+      </div>
+    </div>
+
+    <br><br>
+
+    <section class="stage-competence">
+      <h3>Compétence acquise lors du stage :</h3>
+      <p>Au laboratoire FEMTO-ST, j'ai développé des modèles d'apprentissage fédéré pour optimiser la consommation et la production d'énergie solaire et éolienne, alliant analyse de données et intelligence artificielle.</p>
+    </section>
+
+    <section class="competence-section">
+      <div class="competence-header" onclick="toggleSection(this)">
+        <h3>Compétence 4 : Gérer des données de l'information</h3>
+        <button class="toggle-button">+</button>
+      </div>
+      <div class="content"></div>
+    </section>
+
+    <section class="competence-section">
+      <div class="competence-header" onclick="toggleSection(this)">
+        <h3>Compétence 2 : Optimiser des applications</h3>
+        <button class="toggle-button">+</button>
+      </div>
+      <div class="content"></div>
+    </section>
   </main>
 
   <!-- FOOTER -->
   <div data-include="footer.html"></div>
-
-  <!-- SCRIPT D’INCLUSION -->
 
 </body>
 </html>

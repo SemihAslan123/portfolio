@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/include.js" defer></script>
   <script src="js/navbar.js" defer></script>
+  <script src="js/animations.js" defer></script>
 
 </head>
 <body>
@@ -18,9 +19,81 @@
 
   <!-- CONTENU PRINCIPAL -->
   <main>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Étudiant passionné par [ton domaine], je vous présente mes formations, projets et compétences.</p>
+    <div class="imageAccueil">
+      <h1>Semih Aslan</h1>
+      <h2>Étudiant en informatique</h2>
+    </div>
   </main>
+
+  <section class="cards-section">
+    <h2>À propos</h2>
+    <div class="content-below">
+      <div class="cards-container">
+        <div class="card presentation">
+          <h3>Présentation</h3>
+          <p>Actuellement en BUT Informatique à l'Universite Marie & Louis Pasteur, je suis un jeune étudiant souhaitant me spécialiser dans le développement de jeux-vidéos. J’oriente mes études vers une poursuite en école d’ingénieur en informatique, guidé par mon désir d’apprendre et ma curiosité, avec l’ambition d’exercer le métier de développeur de jeux vidéo ou chef de projet informatique. En tant que passionné, j’aime faire des projets personnels pour augmenter mes compétences. . Si vous souhaitez en apprendre plus ou me contacter, explorez ce site ou téléchargez mon CV !</p>
+        </div>
+        <div class="card langues">
+          <h3>Langues</h3>
+          <ul>
+            <li><span class="flag">🇹🇷</span><span class="language-text">Turc (Niveau natif)</span></li>
+            <li><span class="flag">🇫🇷</span><span class="language-text">Français (Niveau natif)</span></li>
+            <li><span class="flag">🇬🇧</span><span class="language-text">Anglais (B2)</span></li>
+            <li><span class="flag">🇮🇹</span><span class="language-text">Italien (A1-A2)</span></li>
+          </ul>
+        </div>
+        <div class="card passions">
+          <h3>Passions</h3>
+          <ul>
+            <li>
+              <span class="passion-title">Football</span>
+              <span class="passion-text">Je pratique le football régulièrement depuis mon plus jeune âge, ce qui m’a appris la discipline et le travail d’équipe. Je suis un fervent supporter du Galatasaray, un club turc prestigieux, et j’aime suivre leurs matchs avec passion.<img src="../medias/Galatasaray-logo.png" alt="Galatasaray Logo" class="galatasaray-logo"></span>
+            </li>
+            <li>
+              <span class="passion-title">Voyager / Culture</span>
+              <span class="passion-text">J’aime découvrir les différents pays du monde et leur culture, ce qui enrichit ma perspective personnelle et professionnelle.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills-section">
+    <h2>Compétences Techniques</h2>
+    <div class="content-below">
+      <div class="cards-container">
+        <div class="card skills web">
+          <h3>Web</h3>
+          <ul>
+            <li>HTML / CSS / JS</li>
+            <li>Java (Play Framework)</li>
+            <li>NodeJs</li>
+            <li>Python (Django)</li>
+          </ul>
+        </div>
+        <div class="card skills database">
+          <h3>Base de données</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgresSQL</li>
+            <li>PL/SQL</li>
+          </ul>
+        </div>
+        <div class="card skills programming">
+          <h3>Programmation</h3>
+          <ul>
+            <li>C</li>
+            <li>Kotlin (Android)</li>
+            <li>Swift (IOS)</li>
+            <li>Java</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <div data-include="footer.html"></div>
