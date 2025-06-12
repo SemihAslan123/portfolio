@@ -32,7 +32,7 @@
 
     <section class="stage-competence">
       <h3>Compétence acquise lors du stage :</h3>
-      <p>Au laboratoire FEMTO-ST, j'ai développé des modèles d'apprentissage fédéré pour optimiser la consommation et la production d'énergie solaire et éolienne, alliant analyse de données et intelligence artificielle.</p>
+      <p>J'ai conçu un système interactif qui aide les enseignes à contrôler les canals sur leurs écrans en magasin. Ce système intègre un calendrier de planification pour spécifier les heures et les types de contenus à diffuser, permettant ainsi une gestion adaptable et détaillée des supports multimédias.</p>
     </section>
 
     <section class="competence-section">
@@ -40,15 +40,95 @@
         <h3>Compétence 4 : Gérer des données de l'information</h3>
         <button class="toggle-button">+</button>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="image-analysis">
+          <img src="medias/crudAffichage.png" alt="Description de la première image" class="smaller-image">
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+        <div class="image-analysis">
+          <img src="medias/schemaJavaPlay.png" alt="Description de la deuxième image" class="smaller-image">
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+        <div class="code-analysis">
+          <pre><code class="java">
+            public static void insererProgrammation(int idMagasin, java.sql.Date dateRealisation, java.sql.Date dateDebut, java.sql.Date dateFin, java.sql.Time heureDebut, java.sql.Time heureFin, String canalS, String tempsCanal, int rotatioN, Boolean traitemenT, int villeId, int enseigneId) {
+              models.Affichage affichage = new models.Affichage();
+            
+              affichage.id_magasin = idMagasin;
+              affichage.date_realisation = dateRealisation;
+              affichage.date_debut = dateDebut;
+              affichage.date_fin = dateFin;
+              affichage.heure_debut = heureDebut;
+              affichage.heure_fin = heureFin;
+              affichage.canals = canalS;
+              affichage.temps_canal = tempsCanal;
+              affichage.rotation = rotatioN;
+              affichage.traitement = traitemenT;
+              affichage.ville_id = villeId;
+              affichage.enseigne_id = enseigneId;
+            
+              // Sauvegarde
+              affichage.save();
+            }
+            
+            public static Map<String, Object> supprimerProgrammationGetInfo(Long id) {
+              Affichage affichage = Affichage.find.byId(id);
+              Map<String, Object> result = new HashMap<>();
+              
+              if (affichage != null) {
+                  result.put("ville_id", affichage.ville_id);
+                  result.put("enseigne_id", affichage.enseigne_id);
+                  
+                  List<Integer> numerosCanaux = affichage.getNumerosCanaux();
+                  if (!numerosCanaux.isEmpty()) {
+                      result.put("numero_canal", numerosCanaux.get(0));
+                  } else {
+                      result.put("numero_canal", null);
+                  }
+            
+                  affichage.delete();
+              }
+              
+              return result;
+            }
+          </code></pre>
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="competence-section">
       <div class="competence-header" onclick="toggleSection(this)">
-        <h3>Compétence 2 : Optimiser des applications</h3>
+        <h3>Compétence 6 : Collaborer au sein d'une équipe informatique</h3>
         <button class="toggle-button">+</button>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="image-analysis">
+          <img src="medias/lienImage.png" alt="Lien Image">
+          <img src="medias/telechargementZipImage.png" alt="Téléchargement Zip Image" class="no-margin smaller-image">
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+        <div class="image-analysis">
+          <img src="medias/ticketImage.png" alt="Description de la première image" class="smaller-image">
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+        <div class="image-analysis">
+          <img src="medias/zipImage.png" alt="Description de la deuxième image" class="smaller-image">
+          <p class="analysis-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 

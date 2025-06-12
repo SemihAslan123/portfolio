@@ -94,3 +94,40 @@ main {
     padding-left: 10px;
     margin-bottom: 20px;
 }
+
+.image-analysis, .code-analysis {
+    margin-bottom: 20px;
+}
+
+.image-analysis img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.image-analysis .smaller-image {
+    max-width: 50%;
+    height: auto; 
+}
+
+.image-analysis .no-margin {
+    margin-bottom: 0;
+}
+
+.analysis-text {
+    margin-top: 10px;
+    font-size: 1em;
+    color: white;
+}
+
+pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code.java {
+    font-family: 'Courier New', Courier, monospace;
+}
